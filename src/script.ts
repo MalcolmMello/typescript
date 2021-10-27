@@ -1,5 +1,3 @@
-let nome: string = 'Bonieky'
+let nomes: any = ['baonieky', 'pedro', 'neymar agiota']
 
-let idade = 90
-
-let programador: boolean = true
+nomes.push(556)
