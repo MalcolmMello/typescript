@@ -1,11 +1,8 @@
-type Opcoes = {
-    width: number,
-    height: number
+function fazerRequisicao(url: string, method: 'GET' | 'POST') {
+    //....
 }
 
-function configurar(props: Opcoes | 'auto') {
+type Methods = 'GET' | 'POST';
 
-}
-
-configurar({width: 100, height: 200});
-configurar('auto')
+let url = 'https://google.com.br';
+let method = 'GET'
