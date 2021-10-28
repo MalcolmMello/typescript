@@ -1,6 +1,6 @@
 function showAge(idade: string | number) {
     if(typeof idade === 'string') {
-        console.log("My age is: "+idade)
+        console.log(idade.toUpperCase())
     } else {
         console.log( idade )
     }
