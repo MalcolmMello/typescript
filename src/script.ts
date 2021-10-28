@@ -1,9 +1,10 @@
-let names = ['malcolm', 'bonieky']
+function resumo(usuario: {nome: string, idade: number}) {
+    return `Olá ${usuario.nome}, tudo bem? Você tem ${usuario.idade} anos`
+}
 
-names.forEach(function(nome) {
-    if(typeof nome === 'string') {
-        console.log(nome.toUpperCase())
-    } else {
-        console.log(nome)
-    }
-})
+let u = {
+    nome: 'Malcolm',
+    idade: 90
+};
+
+console.log(resumo(u))
