@@ -1,11 +1,18 @@
-function showAge(idade: string | number) {
-    if(typeof idade === 'string') {
-        console.log(idade.toUpperCase())
-    } else {
-        console.log( idade )
-    }
+/*type User = {
+    nome: string,
+    idade: number
+}*/
+interface User {
+    nome: string,
+    idade: number
 }
 
-showAge(90)
-showAge('90')
+function resumo(usuario: User) {
+    return `Olá ${usuario.nome}, você tem ${usuario.idade} anos`
+}
+
+resumo({
+    nome: 'Malcolm',
+    idade: 90
+})
 
