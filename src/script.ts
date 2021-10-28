@@ -1,6 +1,9 @@
-function firstLetterUpperCaser(name: string) {
-    let firstLetter = name.charAt(0).toUpperCase()
-    return  firstLetter+name.substring(1)
-}
+let names = ['malcolm', 'bonieky']
 
-firstLetterUpperCaser('marlo')
+names.forEach(function(nome) {
+    if(typeof nome === 'string') {
+        console.log(nome.toUpperCase())
+    } else {
+        console.log(nome)
+    }
+})
