@@ -1,13 +1,11 @@
-function resumo(usuario: {nome: string, idade?: number}) {
-    if(usuario.idade !== undefined) {
-        return `Olá ${usuario.nome}, tudo bem? Você tem ${usuario.idade} anos`
+function showAge(idade: string | number) {
+    if(typeof idade === 'string') {
+        console.log("My age is: "+idade)
     } else {
-        return `Olá ${usuario.nome}, tudo bem?`
+        console.log( idade )
     }
 }
 
-let u = {
-    nome: 'Malcolm'
-};
+showAge(90)
+showAge('90')
 
-console.log(resumo(u))
