@@ -1,5 +1,11 @@
-let idadeField = document.getElementById('idade') as HTMLInputElement
+type Opcoes = {
+    width: number,
+    height: number
+}
 
-// ...
+function configurar(props: Opcoes | 'auto') {
 
-console.log( idadeField.value )
+}
+
+configurar({width: 100, height: 200});
+configurar('auto')
